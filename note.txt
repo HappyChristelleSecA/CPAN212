@@ -1,0 +1,4 @@
+.gitignore to ignore modules you dont want to push
+npm innit -y 
+npm i lodash
+node index.js to run file
