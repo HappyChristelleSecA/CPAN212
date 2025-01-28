@@ -1,4 +1,19 @@
 .gitignore to ignore modules you dont want to push
-npm innit -y 
+npm init -y 
 npm i lodash
 node index.js to run file
+
+for week 3
+create week 3 folder and open in terminal
+npm init -y
+npm i express nodemon dotenv
+create a .env file
+create new file index.js
+nodemon index.js
+in package.json add type node module to use import cmd
+
+
+create lab2 folder lab2
+
+npm init -y
+npm i express nodemon 
