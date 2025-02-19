@@ -1,93 +1,42 @@
-/* Set a light pink background and center content */
-body {
-  background-color: #ffe6f2;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-/* Style the main container */
 #root {
-  max-width: 800px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header styles */
-h2 {
-  color: #d63384;
-}
-
-/* Button styling */
-button {
-  background-color: #ff99cc;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  margin: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.3s ease-in-out;
-}
-
-button:hover {
-  background-color: #ff6699;
-}
-
-/* Input field styling */
-input[type="file"] {
-  margin: 10px 0;
-  padding: 5px;
-  border: 1px solid #ff99cc;
-  border-radius: 5px;
-}
-
-/* Image styling */
-img {
-  width: 200px;
-  margin: 10px;
-  border-radius: 5px;
-  border: 2px solid #ff99cc;
-}
-
-/* Multiple images container */
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-/* Message styling */
-.message {
-  color: green;
-  font-weight: bold;
-}
-
-/* Card styling */
-.card {
+.logo {
+  height: 6em;
   padding: 1.5em;
-  background: #fff5f8;
-  border-radius: 10px;
-  margin: 20px auto;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* Reduce logo animation effect */
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: none;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
-/* Hide unnecessary elements */
-.logo,
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
 .read-the-docs {
-  display: none;
+  color: #888;
 }
