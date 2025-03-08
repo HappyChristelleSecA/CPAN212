@@ -1,0 +1,109 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(198, 113, 171, 0.9);
+  background-color: #ffe6f2; 
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #d63384; 
+  text-decoration: inherit;
+}
+a:hover {
+  color: #bf2470; 
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+  background-color: #ffe6f2;
+}
+
+.container {
+  background: black;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  color: #bf2470; 
+}
+
+button {
+  border-radius: 8px;
+  border: 2px solid #ff99cc; 
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ff99cc; 
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #ff66a3; 
+  border-color: #bf2470;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto #bf2470;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 2px solid #ff99cc;
+  border-radius: 5px;
+  background-color: black;
+  color: #bf2470;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.image {
+  width: 200px;
+  border-radius: 10px;
+  border: 3px solid #ff99cc;
+  margin: 10px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.message {
+  color: #bf2470;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}
